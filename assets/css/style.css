@@ -149,20 +149,19 @@ li a:visited {
 }
 
 .mid-level h2, h3 {
-    color: #107acc;
+    color: rgb(30, 110, 176);
 }
 
 .mid-level strong {
-    color: #2898ee;
+    color: rgb(30, 110, 176);
 }
-
 .flex-container p {
     margin: 0;
     padding: 0;
 }
 
 .quote {
-    background-color: #ffe4c4;
+    background-color: #f1f1f1;
     border-radius: 10px;
     padding: 10px;
 }
@@ -175,7 +174,7 @@ li a:visited {
 
 .mid-level hr {
     margin: 25px 30px 25px 30px;
-    border-color: #2898ee;
+    border-color: #397cff;
 }
 
 .img-container {
@@ -203,7 +202,7 @@ th, td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
-    background-color: rgb(254, 196, 124);
+    background-color: #cccccc;
 }
 
 td:first-child {
