@@ -22,6 +22,14 @@ header a {
     margin: 10px;
 }
 
+p {
+    font-size: 22px;
+}
+
+h2 {
+    margin: 6% 0% 6% 0%;
+}
+
 .main-message {
     display: flex;
     width: 100%;
@@ -63,19 +71,18 @@ hr {
 iframe {
     width: 32px;
     height: 32px;
+    margin-left: 4%;
 }
 
 .sub-1 h2 {
-    margin: 6% 4% 6% 0%;
     color: #de2e03;
 }
 
 .sub-1 p {
     margin: 0% 8% 8% 8%;
-    font-size: 22px;
 }
 
-.sub-1 strong {
+strong {
     color: #de2e03;
 }
 
@@ -113,11 +120,11 @@ li {
 }
 
 li a , ol{
-    color: #c00000;
+    color: rgb(42, 42, 42);
 }
 
 li a:visited {
-    color: #ff7c39;
+    color: rgb(42, 42, 42);
 }
 
 #index-title {
@@ -125,3 +132,26 @@ li a:visited {
     color: #c00000;
 }
 
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.basic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    flex-direction: column;
+}
+
+h2, h3 {
+    color: #de2e03;
+}
+
+.flex-container p {
+    margin: 0;
+    padding: 0;
+}
