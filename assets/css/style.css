@@ -22,6 +22,10 @@ header a {
     margin: 10px;
 }
 
+h2, h3 {
+    color: #de2e03;
+}
+
 p {
     font-size: 22px;
 }
@@ -72,10 +76,6 @@ iframe {
     width: 32px;
     height: 32px;
     margin-left: 4%;
-}
-
-.sub-1 h2 {
-    color: #de2e03;
 }
 
 .sub-1 p {
@@ -143,15 +143,90 @@ li a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 320px;
     flex-direction: column;
+    
 }
 
-h2, h3 {
-    color: #de2e03;
+.mid-level h2, h3 {
+    color: #107acc;
+}
+
+.mid-level strong {
+    color: #2898ee;
 }
 
 .flex-container p {
     margin: 0;
     padding: 0;
+}
+
+.quote {
+    background-color: #ffe4c4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sep {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px 60px 0px;
+}
+
+.mid-level hr {
+    margin: 25px 30px 25px 30px;
+    border-color: #2898ee;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 0 60px 0;
+}
+
+#neut {
+    color: rgb(80, 80, 80);
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(254, 196, 124);
+}
+
+td:first-child {
+    background-color: rgb(251, 206, 152);
+}
+
+td:nth-child(2) {
+    background-color: #faa460;
+}
+
+td:nth-child(3) {
+    background-color: rgb(220, 220, 220);
+}
+
+.light td:nth-child(3) {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.light td:nth-child(2) {
+    background-color: rgb(220, 220, 220);
+}
+
+.light td:nth-child(1) {
+    background-color: #ffffff;
 }
