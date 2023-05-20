@@ -55,17 +55,22 @@ hr {
 .center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 32px;
+    height: 32px;
 }
 
 .sub-1 h2 {
-    margin: 6% 12% 6% 12%;
+    margin: 6% 4% 6% 0%;
     color: #de2e03;
 }
 
 .sub-1 p {
-    margin: 0% 12% 12% 12%;
+    margin: 0% 8% 12% 8%;
     font-size: 22px;
-
 }
 
 .sub-1 strong {
