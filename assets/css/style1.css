@@ -1,0 +1,54 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.flex-container {
+    display: flex;
+    width: 412px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+}
+
+.pres {
+    margin-top: 20px;
+}
+
+.quote {
+    background: linear-gradient(to bottom right, #fc4b08, #ffa460);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.presentation {
+    margin: 20px;
+}
+
+strong {
+    color: #000000
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
