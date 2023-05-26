@@ -1,0 +1,33 @@
+body { background-color:bisque ;}
+
+.contact-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+}
+
+.contact-msg h1, p {
+    color: #c00000;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    color:rgb(226, 208, 180) ;
+}
