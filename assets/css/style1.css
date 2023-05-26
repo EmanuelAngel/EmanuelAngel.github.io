@@ -2,6 +2,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0px;
     padding: 0px;
+    width: 412px;
+    height: auto;
 }
 
 p {
