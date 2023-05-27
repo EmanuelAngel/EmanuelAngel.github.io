@@ -17,8 +17,8 @@ body { background-color:bisque ;}
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
 }
 
 section {
