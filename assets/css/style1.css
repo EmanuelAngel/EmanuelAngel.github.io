@@ -4,6 +4,13 @@ body {
     padding: 0px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 p {
     font-size: 22px;
     color: #ffffff;
@@ -47,15 +54,26 @@ strong {
 
 .carousel {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-}
-
-main {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 300px;
+    height: auto;
+}
+
+.carousel img {
+    border-radius: 7px;
+}
+
+.arrows {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    justify-content: space-evenly;
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    padding: 0;
 }

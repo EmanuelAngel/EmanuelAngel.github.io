@@ -38,7 +38,7 @@
                         </p>
                         <p>
                             En este sitio web te enseñaré a sacarle todo el potencial a tu <strong>fotógrafo
-                                interior</strong>. Con tan solo tu
+                                interior</strong>. Con tan solo un
                             celular y con técnicas <strong>fáciles</strong> y <strong>rápidas</strong> de aprender.
                         </p>
                         <p>
@@ -46,12 +46,45 @@
                         </p>
                     </div>
                     <div class="carousel">
-                        <h1> ACÁ VA EL CARRUSEL </h1>
+                        <img class="main-img" src="assets/img/carousel/nsx.jpg" alt="auto" width="300px" height="225px">
+                        <div class="arrows">
+                            <button onclick="previous()" class="arrow-button"><img
+                                    src="assets/img/carousel/flecha-izquierda.png" alt="anterior" width="45px"
+                                    height="45px"></button>
+                            <button onclick="next()" class="arrow-button"><img
+                                    src="assets/img/carousel/flecha-derecha.png" alt="siguiente" width="45px"
+                                    height="45px"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        let mainimg = document.querySelector(".main-img");
+        let img = ["assets/img/carousel/nsx.jpg", "assets/img/carousel/cafe.jpg", "assets/img/carousel/cerro.jpg", "assets/img/carousel/frutilla.jpg", "assets/img/carousel/bicho.jpg"];
+        let n = 0;
+
+        function previous() {
+            n--;
+            if (n < 0) {
+                n = img.length-1;
+                mainimg.src = img[n];
+            } else {
+                mainimg.src = img[n];
+            }
+        }
+
+        function next() {
+            n++;
+            if (n >= img.length) {
+                n = 0;
+                mainimg.src = img[n];
+            } else {
+                mainimg.src = img[n];
+            }
+        }
+    </script>
 </body>
 
 </html>
