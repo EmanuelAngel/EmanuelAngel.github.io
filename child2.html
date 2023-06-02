@@ -35,21 +35,21 @@
         </div>
         <div class="quote">
             <div class="form">
-                <form onsubmit="return val()" id="form">
+                <form onsubmit="return val()" id="form-c">
                     <div class="sep">
-                        <label for="name">Nombre</label>
+                        <label for="name">Nombre <strong>*</strong></label>
                         <input id="name" autofocus>
                     </div>
                     <div class="sep">
                         <label for="email">Email</label>
-                        <input for="email">
+                        <input id="email">
                     </div>
                     <div class="sep">
-                        <label for="message">Mensaje</label>
+                        <label for="message">Mensaje <strong>*</strong></label>
                         <textarea id="message" rows="5"></textarea>
                     </div>
                     <div>
-                        <button  class="sub-btn" type="submit">Enviar</button>
+                        <button class="sub-btn" type="submit">Enviar</button>
                     </div>
 
                     <div id="advs">
@@ -57,11 +57,89 @@
                     </div>
                 </form>
             </div>
-            <div id="msgs">
-
-            </div>
+        </div>
+        <div id="msgs">
         </div>
     </section>
 </body>
+
+<script>
+    let first = document.querySelector("form input");
+    first.focus();
+
+    let regEx = /^\w+([-_.]?\w+)*@\w+([-_.]?\w+)*\.\w{2,}$/;
+
+    function val() {
+        let name = document.querySelector("#name");
+        name.classList.remove("error");
+
+        let email = document.querySelector("#email")
+        email.classList.remove("error");
+
+        let message = document.querySelector("#message");
+        message.classList.remove("error");
+
+        let advsList = document.querySelector("#advs")
+        advsList.innerHTML = "";
+        advsList.style.display = "none";
+
+        let messageList = document.querySelector("#msgs")
+
+        let check = false;
+
+        if (name.value == "") {
+            name.classList.add("error");
+            let p = document.createElement("p");
+            p.innerHTML = "El campo -Nombre- está vacío.";
+            advsList.appendChild(p);
+            check = true;
+        }
+
+        if (message.value == "") {
+            message.classList.add("error");
+            let p = document.createElement("p");
+            p.innerHTML = "El campo -Mensaje- está vacío.";
+            advsList.appendChild(p);
+            check = true;
+        } else if (message.value.length > 300) {
+            message.classList.add("error");
+            let p = document.createElement("p");
+            p.innerHTML = "El mensaje es demasiado largo. Límite de carácteres soportados: 150. Caracteres del mensaje actual: " + message.value.length + ".";
+            advsList.appendChild(p);
+            check = true;
+        }
+
+        if (email.value != "" && !regEx.test(email.value)) {
+            email.classList.add("error")
+            let p = document.createElement("p");
+            p.innerHTML = "Email inválido";
+            advsList.appendChild(p);
+            check = true;
+        }
+
+        if (check) {
+            advsList.style.display = "initial";
+            return false;
+        } else {
+            let p = document.createElement("p");
+            if (email.value != "") {
+                p.innerHTML =
+                "Enviado con éxito. Se envió el siguiente mensaje: \n"
+                + name.value + ".\n"
+                + message.value + "\n"
+                + email.value;
+            } else {
+                p.innerHTML = 
+                name.value + ".\n"
+                + message.value;
+            }
+            advsList.append(p);
+            document.forms["form-c"].reset();
+            let first = document.querySelector("form input");
+            first.focus();
+        }
+        return false;
+    }
+</script>
 
 </html>
