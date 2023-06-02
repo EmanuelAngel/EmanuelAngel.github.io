@@ -100,3 +100,22 @@ strong {
     border: 1px solid red;
     border-style: initial;
 }
+
+#msgs {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    margin: 30px 0;
+    background: linear-gradient(to bottom right, #F4F4F4, #DDDDDD);
+    border-radius: 10px;
+}
+
+#msgs p {
+    color: #000000;
+    margin: 0;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: none;
+}

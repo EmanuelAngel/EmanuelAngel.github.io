@@ -101,10 +101,10 @@
             p.innerHTML = "El campo -Mensaje- está vacío.";
             advsList.appendChild(p);
             check = true;
-        } else if (message.value.length > 300) {
+        } else if (message.value.length > 400) {
             message.classList.add("error");
             let p = document.createElement("p");
-            p.innerHTML = "El mensaje es demasiado largo. Límite de carácteres soportados: 150. Caracteres del mensaje actual: " + message.value.length + ".";
+            p.innerHTML = "El mensaje es demasiado largo.<br> Límite de carácteres soportados: 400.<br> Caracteres del mensaje actual: " + message.value.length + ".";
             advsList.appendChild(p);
             check = true;
         }
@@ -124,14 +124,21 @@
             let p = document.createElement("p");
             if (email.value != "") {
                 p.innerHTML =
-                "Enviado con éxito. Se envió el siguiente mensaje: \n"
-                + name.value + ".\n"
-                + message.value + "\n"
-                + email.value;
+                "Enviado con éxito. <br>Se envió el siguiente mensaje: <br><br>"
+                + name.value + ".<br><br>"
+                + message.value + "<br><br>"
+                + email.value + "<br><br>"
+                + "¡Gracias por comunicarte conmigo!"
+                + " Responderé con gusto lo antes posible.<br>"
+                + "Tiempo estimado de respuesta: 9641 hora(s).";
             } else {
-                p.innerHTML = 
-                name.value + ".\n"
-                + message.value;
+                p.innerHTML =
+                "Enviado con éxito. <br>Se envió el siguiente mensaje: <br><br>"
+                + name.value + ".<br><br>"
+                + message.value + "<br><br>"
+                + "¡Gracias por comunicarte conmigo!"
+                + " Responderé con gusto lo antes posible.<br>"
+                + "Tiempo estimado de respuesta: 9641 hora(s).";
             }
             messageList.appendChild(p);
             document.forms["form-c"].reset();
