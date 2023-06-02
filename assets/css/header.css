@@ -1,5 +1,6 @@
 header {
     background-image: linear-gradient(to right, #de2e03, #ff7c39);
+    z-index: 999;
 }
 
 .header-container {

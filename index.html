@@ -14,10 +14,6 @@
     <link rel="icon" href="assets/img/icon2.png">
 </head>
 
-
-<!-- ÍCONOS TEMPORALES -->
-<!-- ÍMAGENES TEMPORALES -->
-
 <body>
     <header class="header-container">
         <nav>
@@ -50,6 +46,9 @@
             </div>
             <div class="creditos">
                 <p><a href="https://giphy.com/gifs/thumbs-up-pikachu-HRX9eXDdfcEGpc0r55">Pikachu via GIPHY</a></p>
+                <p><a
+                        href="https://www.freepik.es/foto-gratis/adolescente-encantadora-positiva-pelo-rizado-peinado-toma-selfie-entorno-urbano-sonrie-alegremente-escucha-musica-playlit-usa-auriculares-inalambricos-oidos-buen-humor-dia-primavera_25907613.htm#page=2&query=selfie&position=9&from_view=search&track=sph">Imagen
+                        de wayhomestudio</a> en Freepik</p>
             </div>
         </div>
         <hr>
@@ -89,8 +88,10 @@
                         <div class="sep">
                             <img src="assets/img/3-4/Ciclista.jpeg" alt="Ciclista3-4" width="320px" height="240px">
                         </div>
-                        Imagen de <a
-                            href="https://www.freepik.es/foto-gratis/adulto-joven-bicicleta-eletrica-campo_19124469.htm#query=Paisaje&position=36&from_view=search&track=sph">Freepik</a>
+                        <div class="creditos small-v-margin">
+                            Imagen de <a
+                                href="https://www.freepik.es/foto-gratis/adulto-joven-bicicleta-eletrica-campo_19124469.htm#query=Paisaje&position=36&from_view=search&track=sph">Freepik</a>
+                        </div>
                         <p>
                             Básicamente, se divide la imagen en tres partes iguales, tanto horizontal como
                             verticalmente. Luego, se colocan los elementos <strong>importantes</strong> de la imagen en
@@ -112,6 +113,19 @@
                             <img src="assets/img/portrait/vista-lateral-hombre-rastas-afro-posando.jpg" alt=""
                                 width="120px" height="180px">
                         </div>
+                        <div class="flex-container sp-ev small-v-margin">
+                            <div class="creditos">
+                                <p>Imagen de <a
+                                        href="https://www.freepik.es/foto-gratis/primer-plano-hermosa-mujer-joven-mirando-camara_3063902.htm#page=3&query=retrato%20mujer%20urbano&position=22&from_view=search&track=ais">Freepik</a>
+                                </p>
+                            </div>
+                            <div class="creditos">
+                                <p>Imagen de <a
+                                        href="https://www.freepik.es/foto-gratis/vista-lateral-hombre-rastas-afro-posando_28404568.htm#page=3&query=retrato%20mujer%20urbano&position=26&from_view=search&track=ais">Freepik</a>
+                                </p>
+                            </div>
+                        </div>
+
                         <p>
                             Por ejemplo, la luz de la tarde es más cálida y suave, mientras que la luz del mediodía es
                             más
@@ -154,11 +168,76 @@
                 </div>
             </div>
             <hr>
-            
+            <div id="dev"></div>
+            <div class="flex-container">
+                <div class="basic-container">
+                    <h2>Desarrollo técnico</h2>
+                    <div class="quote">
+                        <p>Ahora que ya conoces algunos conceptos básicos de
+                            fotografía, es hora de empezar a
+                            <strong>practicar</strong>.
+                        </p>
+                        <div class="z-img">
+                            <img src="assets/img/dev/img-dev-hand.jpg" alt="" width="160px" height="80px">
+                            <img src="assets/img/dev/img-dev-clean.jpg" alt="" width="100px" height="160px">
+                            <img src="assets/img/dev/img-dev-mpx.jpeg" alt="" width="100px" height="160px">
+                        </div>
+                        <div class="creditos small-v-margin">
+                            <p>Imagen de pereslavtseva en <a
+                                    href="https://www.freepik.es/foto-gratis/mujer-tarde-dispara-telefono-campo_9603822.htm#query=camara%20celular%20limpiar&position=21&from_view=search&track=robertav1_2_sidr">Freepik</a>
+                            </p>
+                            <p>Imagen de <a
+                                    href="https://www.freepik.es/foto-gratis/persona-desinfectando-telefono-inteligente_8727084.htm#query=limpiar%20celular&position=17&from_view=search&track=robertav1_2_sidr">Freepik</a>
+                            </p>
+                        </div>
+                        <p>Una vez <strong>limpia</strong> la pantalla y la cámara...
+                            Seguimos la regla de los tercios, encuadrando lo que deseas
+                            <strong>capturar</strong>.
+                        </p>
+                        <div class="medium-v-margin">
+                            <p>Prueba distintas posiciones, horarios, momentos, para obtener varias perspectivas de iluminación.
+                            Para así elegir la que se adecúe mejor al <strong>resultado que
+                            deseas<strong>.</p>
+                        </div>
+                        <div class="carousel-auto">
+                            <img class="mainImgAuto" src="assets/img/dev/carousel/img-dev-carrousel-noon.jpg" alt="" width="240px" height="320px">
+                            <p class="mainTextAuto">Descripción de Imagen</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
-
+    <script>
+        let i = 0;
+        let imgs = ["assets/img/dev/carousel/img-dev-carrousel-noon.jpg", "assets/img/dev/carousel/img-dev-carrousel-cloud.jpg", "assets/img/dev/carousel/img-dev-carrousel-sunset.jpg"];
+        let text = ["Mediodia, sin nubes", "Mediodia, con nubes", "Atardecer, sin nubes"];
+        let mainImg = document.querySelector(".mainImgAuto");
+        let mainText = document.querySelector(".mainTextAuto");
+        let time = 8000;
+    
+        function changeImg() {
+            mainImg.style.opacity = 0;
+            mainText.style.opacity = 0;
+    
+            setTimeout(() => {
+                mainImg.src = imgs[i];
+                mainText.textContent = text[i];
+                mainImg.style.opacity = 1;
+                mainText.style.opacity = 1;
+            }, 500);
+    
+            if (i < imgs.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout(changeImg, time);
+        }
+    
+        window.onload = changeImg;
+    </script>
 </body>
 
 </html>
