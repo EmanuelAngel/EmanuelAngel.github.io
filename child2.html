@@ -123,6 +123,7 @@
         } else {
             let p = document.createElement("p");
             if (email.value != "") {
+                messageList.style.display = "initial";
                 p.innerHTML =
                 "Enviado con éxito. <br>Se envió el siguiente mensaje: <br><br>"
                 + name.value + ".<br><br>"
@@ -132,6 +133,7 @@
                 + " Responderé con gusto lo antes posible.<br>"
                 + "Tiempo estimado de respuesta: 9641 hora(s).";
             } else {
+                messageList.style.display = "initial";
                 p.innerHTML =
                 "Enviado con éxito. <br>Se envió el siguiente mensaje: <br><br>"
                 + name.value + ".<br><br>"
