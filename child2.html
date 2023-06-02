@@ -27,7 +27,7 @@
         <div class="flex-container">
             <div class="contact-msg">
                 <h1>CONTACTO</h1>
-                <p>¿Ansías mis ideas e inspiración en algún projecto o realizar una colaboración juntos?</p>
+                <p>¿Te gustaría explorar mis ideas e inspiración en tu projecto o realizar una colaboración juntos?</p>
                 <p>Llena el siguiente formulario con tu información personal o de empresa.</p>
                 <p>Esta información me llegará a mi mail personal.</p>
                 <p>¡Escucho abiertamente propuestas de colaboración y similares!</p>
@@ -35,10 +35,32 @@
         </div>
         <div class="quote">
             <div class="form">
-                <h1>ACÁ VA EL FORMULARIO</h1>
+                <form onsubmit="return val()" id="form">
+                    <div class="sep">
+                        <label for="name">Nombre</label>
+                        <input id="name" autofocus>
+                    </div>
+                    <div class="sep">
+                        <label for="email">Email</label>
+                        <input for="email">
+                    </div>
+                    <div class="sep">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <button  class="sub-btn" type="submit">Enviar</button>
+                    </div>
+
+                    <div id="advs">
+
+                    </div>
+                </form>
+            </div>
+            <div id="msgs">
+
             </div>
         </div>
-        <h6> tiempo estimado de respuesta: 9641 hora(s)</h6>
     </section>
 </body>
 

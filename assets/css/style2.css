@@ -31,3 +31,45 @@ section {
 h6 {
     color:rgb(226, 208, 180) ;
 }
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sep {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: larger;
+}
+
+input {
+    height: 25px;
+}
+
+input, textarea {
+    border-style: none;
+    border-radius: 5px;
+    background-color: bisque;
+}
+
+.sub-btn {
+    font-family: inherit;
+    font-size: large;
+    color: bisque;
+    width: 100px;
+    height: 30px;
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 5px;
+    background-color: #c00000;
+}
