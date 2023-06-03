@@ -5,8 +5,7 @@ body {
     padding: 0px;
 }
 
-h2,
-h3 {
+h2, h3 {
     color: #de2e03;
 }
 
@@ -16,6 +15,11 @@ p {
 
 h2 {
     margin: 6% 0% 6% 0%;
+}
+
+/* Sí...*/
+img {
+    border-radius: 5px;
 }
 
 .main-message {
@@ -278,4 +282,37 @@ td:nth-child(3) {
 
 .mainImgAuto, .mainTextAuto {
     transition: opacity 0.5s ease;
+}
+
+/* Llegado a este punto, no sé por qué no simplemente hago una clase
+"borded" que aplique los bordes redondeados...*/
+
+.quote-ideas {
+    width: 290px;
+    height: auto;
+    background: linear-gradient(to right bottom, #4286f4, #8f34a3);
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.ideas-el {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    word-break: break-all;
+}
+
+.ideas-el p {
+    margin: 0 5px;
+    font-size: small;
+    color: #ffffff;
+}
+
+.quote-ideas hr {
+    border-color: #ffffff;
+}
+
+.det {
+    width: 140px;
+    height: 100px;
 }

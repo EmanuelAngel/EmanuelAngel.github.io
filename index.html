@@ -62,8 +62,7 @@
                         <li><a href="#intro"> Introduccion</a></li>
                         <li><a href="#basic"> Conceptos Básicos</a></li>
                         <li><a href="#dev"> Desarrollo técnico</a></li>
-                        <li><a href="#ideas"> Ideas (fondo naranja)</a></li>
-                        <li><a href="#practice"> Puesta en práctica (gifs/ videos)</a></li>
+                        <li><a href="#ideas"> Ideas</a></li>
                         <li><a href="#results"> Resultados esperados</a></li>
                         <li><a href="#end"> Conclusión</a></li>
                     </ol>
@@ -202,10 +201,48 @@
                         <div class="carousel-auto">
                             <img class="mainImgAuto" src="assets/img/dev/carousel/img-dev-carrousel-noon.jpg" alt="" width="240px" height="320px">
                             <p class="mainTextAuto">Descripción de Imagen</p>
-                            
                         </div>
                     </div>
                 </div>
+            </div>
+            <hr>
+            <div id="ideas"></div>
+            <div class="flex-container">
+                <div class="basic-container">
+                    <h2 class="ideas-col">Ideas</h2>
+                    <div class="quote">
+                        <p class="medium-v-margin ideas-col">Acá te dejo unas ideas para <strong>explorar</strong> lo aprendido, pero con un <strong>enfoque</strong>... diferente.</p>
+                    </div>
+                    <div class="quote-ideas small-v-margin">
+                        <div class="ideas-el">
+                            <p>Retrato. La idea de los retratos es que haya un protagonista.
+                            Este, debe destacar. Mi tip es que el protagonista
+                            esté mirando hacia la fuente de luz.</p>
+                            <img src="assets/img/ideas/img-ideas-portrait.jpg" alt=""
+                            width="160px" height="100px">
+                        </div>
+                        <hr>
+                        <div class="ideas-el">
+                            <img src="assets/img/ideas/img-ideas-detail.jpg" alt="" width="120px" height="160px">
+                            <p class="det">Detalle. Mientras haya 'detalle' cualquiera puede ser protagonista.
+                                Tip: el efecto 'quemado', no siempre es malo. En este caso, acompaña
+                                aportando frescura.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="ideas-el">
+                            <p>Espejo. En los tercios centrales está el duplicado, y en los superiores e inferiores
+                            hay algo diferente. En este caso, en el superior está el cielo despejado, y en el inferior
+                            hay vegetación.
+                            </p>
+                            <img src="assets/img/ideas/img-ideas-sky.jpg" alt="" width="160px" height="100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                
             </div>
         </div>
     </main>
@@ -215,7 +252,7 @@
         let text = ["Mediodia, sin nubes", "Mediodia, con nubes", "Atardecer, sin nubes"];
         let mainImg = document.querySelector(".mainImgAuto");
         let mainText = document.querySelector(".mainTextAuto");
-        let time = 8000;
+        let time = 5000;
     
         function changeImg() {
             mainImg.style.opacity = 0;
@@ -235,9 +272,7 @@
             }
             setTimeout(changeImg, time);
         }
-    
         window.onload = changeImg;
     </script>
 </body>
-
 </html>
